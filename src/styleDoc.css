@@ -1,0 +1,40 @@
+@import url("https://fonts.googleapis.com/css2?family=Viaoda+Libre&display=swap");
+
+
+
+body {
+  background: linear-gradient(to right, #fd2687 0%, #f5d184 100%);
+  padding-top: 35px;
+
+}
+
+h1 {
+  font-family: "Viaoda Libre", cursive;
+  font-weight: bold;
+  color: white;
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 10 rem; 
+}
+
+p {
+  font-weight: bold;
+  color: rgb(255, 251, 0);
+  font-size: 25px;
+}
+
+button {
+  background-color: wheat;
+  color: teal;
+  font-weight: bold;
+}
+
+/* make the button appear in the center of the screen */
+.center {
+  margin: 0;
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
