@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Upload and Display</title>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.2.0/papaparse.min.js"></script>
+    <script data-require="d3@3.5.3" data-semver="3.5.3" src="//cdnjs.cloudflare.com/ajax/libs/d3/3.5.3/d3.js"></script>
+
+    <!-- <script src="https://d3js.org/d3.v4.min.js"></script> -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x"
+      crossorigin="anonymous"
+    />
+    <link href="styleDoc.css" rel="stylesheet" type="text/css" media="screen" />
+  </head>
+
+  <body>
+
+
+    <h1>Welcome!!!</h1>
+    <label for="GCM_Number"><b>GCM File Number</b></label>
+    <input id="GCM_Number" /><br />
+
+    <input type="file" id="csvFileInput" onchange = "loadFile()" style="padding-bottom: 15px" />
+  
+    <p id="status"></p>
+    <table id="my_file" class="table table-striped table-hover"></table>
+
+  </body>
+
+  <footer>
+    <script src="dataparseD.js"></script>
+  </footer>
+</html>
